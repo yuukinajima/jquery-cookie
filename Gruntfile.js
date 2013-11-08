@@ -94,6 +94,10 @@ module.exports = function (grunt) {
 							browserName: 'internet explorer',
 							platform: 'Windows 7',
 							version: '9'
+						},
+						{
+							browserName: 'android',
+							platform: 'Linux'
 						}
 					],
 					testname: 'jquery.cookie qunit tests'
