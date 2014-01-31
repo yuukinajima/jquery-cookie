@@ -22,7 +22,9 @@
 	}
 
 	function decode(s) {
-		return config.raw ? s : decodeURIComponent(s);
+		try {
+			return config.raw ? s : decodeURIComponent(s);
+		} catch(e) {}
 	}
 
 	function stringifyCookieValue(value) {
